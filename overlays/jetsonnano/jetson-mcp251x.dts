@@ -16,6 +16,7 @@
 
 / {
 	overlay-name = "MCP251x CAN Controller";
+	jetson-header-name = "Jetson 40pin Header";
 	compatible = "nvidia,p3449-0000-b00+p3448-0000-b00\0nvidia,p3449-0000-a02+p3448-0000-a02";
 
     
