@@ -95,59 +95,59 @@
 		target = <&pinmux>;
 		__overlay__ {
 			pinctrl-names = "default";
-			pinctrl-0 = <&hdr40_pinmux>;
+			pinctrl-0 = <&jetson_io_pinmux>;
 
-			hdr40_pinmux: header-40pin-pinmux {
-				pin19 {
+			jetson_io_pinmux: exp-header-pinmux {
+				hdr40-pin19 {
 					nvidia,pins = "spi1_mosi_pc0";
 					nvidia,function = "spi1";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin21 {
+				hdr40-pin21 {
 					nvidia,pins = "spi1_miso_pc1";
 					nvidia,function = "spi1";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin23 {
+				hdr40-pin23 {
 					nvidia,pins = "spi1_sck_pc2";
 					nvidia,function = "spi1";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin24 {
+				hdr40-pin24 {
 					nvidia,pins = "spi1_cs0_pc3";
 					nvidia,function = "spi1";
 					nvidia,pull = <TEGRA_PIN_PULL_UP>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin37 {
+				hdr40-pin37 {
 					nvidia,pins = "spi2_mosi_pb4";
 					nvidia,function = "spi2";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin22 {
+				hdr40-pin22 {
 					nvidia,pins = "spi2_miso_pb5";
 					nvidia,function = "spi2";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin13 {
+				hdr40-pin13 {
 					nvidia,pins = "spi2_sck_pb6";
 					nvidia,function = "spi2";
 					nvidia,pull = <TEGRA_PIN_PULL_DOWN>;
 					nvidia,tristate = <TEGRA_PIN_DISABLE>;
 					nvidia,enable-input = <TEGRA_PIN_ENABLE>;
 				};
-				pin18 {
+				hdr40-pin18 {
 					nvidia,pins = "spi2_cs0_pb7";
 					nvidia,function = "spi2";
 					nvidia,pull = <TEGRA_PIN_PULL_UP>;
